@@ -5,4 +5,6 @@
 
 var stringifyJSON = function(obj) {
   // your code goes here
+  // string, number, boolean, function, object  
+  return obj + '';
 };
