@@ -35,7 +35,7 @@ var stringifyJSON = function(obj) {
     var collection = '';
     if (typeof obj !== 'null') {
       for (var key in obj) {
-        if (typeof obj[key] !== 'function' && obj[key] !== 'undefined') {
+        if (typeof obj[key] !== 'function' && typeof obj[key] !== 'undefined') {
           collection += stringifyJSON(key) + ':' + stringifyJSON(obj[key]) + ',';
         }        
       }
